@@ -1,4 +1,4 @@
-import { assertEquals } from "./deps_test.ts";
+import { assertEquals } from "@std/testing/asserts";
 import { Config, makeConfig } from "./config.ts";
 
 Deno.test("makeConfig merges user config with default", () => {

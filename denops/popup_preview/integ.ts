@@ -1,12 +1,7 @@
-import {
-  DdcItem,
-  Denops,
-  is,
-  op,
-  Predicate,
-  PreviewContext,
-  Previewer,
-} from "./deps.ts";
+import type { Denops } from "@denops/std";
+import type { DdcItem, PreviewContext, Previewer } from "@shougo/ddc-vim/types";
+import { is, type Predicate } from "unknownutil";
+import * as op from "@denops/std/option";
 import {
   CompletionItem,
   JsonUserData,

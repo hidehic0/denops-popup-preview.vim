@@ -1,6 +1,7 @@
-import { assertEquals } from "./deps_test.ts";
-import { test } from "https://deno.land/x/denops_test@v1.8.0/mod.ts";
-import { path, vars } from "./deps.ts";
+import { assertEquals } from "@std/testing/asserts";
+import { test } from "@denops/test";
+import * as path from "@std/path";
+import * as vars from "@denops/std/variable";
 import {
   convertInputToMarkdownLines,
   getHighlights,
@@ -93,7 +94,7 @@ test({
 
 test({
   mode: "any",
-  name: "",
+  name: "getMarkdownFences returns correct fence mappings",
   fn: async (denops) => {
     await vars.g.set(
       denops,

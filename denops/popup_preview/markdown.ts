@@ -1,4 +1,7 @@
-import { collect, Denops, fn, vars } from "./deps.ts";
+import type { Denops } from "@denops/std";
+import { collect } from "@denops/std/batch";
+import * as fn from "@denops/std/function";
+import * as vars from "@denops/std/variable";
 type MarkedString = string | { language: string; value: string };
 export type MarkupKind = "plaintext" | "markdown";
 export type MarkupContent = {

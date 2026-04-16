@@ -1,0 +1,17 @@
+{
+  "imports": {
+    "@denops/std": "jsr:@denops/std@8.2.0",
+    "@denops/std/batch": "jsr:@denops/std@8.2.0/batch",
+    "@denops/std/option": "jsr:@denops/std@8.2.0/option",
+    "@denops/std/function": "jsr:@denops/std@8.2.0/function",
+    "@denops/std/function/nvim": "jsr:@denops/std@8.2.0/function/nvim",
+    "@denops/std/variable": "jsr:@denops/std@8.2.0/variable",
+    "@denops/std/autocmd": "jsr:@denops/std@8.2.0/autocmd",
+    "@denops/test": "jsr:@denops/test@4.0.0",
+    "@std/path": "jsr:@std/path@1.1.0",
+    "@shougo/ddc-vim/types": "jsr:@shougo/ddc-vim@9.5.0/types",
+    "@std/testing": "jsr:@std/testing@0.224.0",
+    "@std/testing/asserts": "jsr:@std/testing@0.224.0/asserts",
+    "unknownutil": "jsr:@core/unknownutil@4.3.0"
+  }
+}
