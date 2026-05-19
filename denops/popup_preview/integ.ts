@@ -208,11 +208,11 @@ export async function searchUserdata(
     if (decoded.lspitem.documentation) {
       return getLspContents(decoded.lspitem, filetype);
     } else if (denops.meta.host === "nvim") {
-      denops.call(
+      void denops.call(
         "luaeval",
         "require('popup_preview.nvimlsp').get_resolved_item(_A.arg)",
         { arg: { decoded: decoded.lspitem, selected: selected } },
-      );
+      ).catch(() => {});
       return { found: true };
     }
   }
