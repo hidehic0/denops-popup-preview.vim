@@ -17,10 +17,10 @@ lint: FORCE	## Lint code
 	@deno lint
 
 type-check: FORCE	## Type check
-	@deno test --unstable --no-run ${TARGETS}
+	@deno test --no-run ${TARGETS}
 
 test: FORCE	## Test
-	@deno test --unstable -A --no-check --jobs
+	@deno test -A --shuffle --doc
 
 deps: FORCE	## Update dependencies
 	@deno run -A https://deno.land/x/udd@0.7.2/main.ts ${TARGETS}

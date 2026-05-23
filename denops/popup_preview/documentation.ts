@@ -1,4 +1,5 @@
-import { Denops, op } from "./deps.ts";
+import type { Denops } from "@denops/std";
+import * as op from "@denops/std/option";
 import { CompleteInfo, FloatOption, PopupPos } from "./types.ts";
 import { Config } from "./config.ts";
 import { getLspContents, searchUserdata } from "./integ.ts";
