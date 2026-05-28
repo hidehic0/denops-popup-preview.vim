@@ -1,4 +1,5 @@
-import { Denops, vars } from "./deps.ts";
+import type { Denops } from "@denops/std";
+import * as vars from "@denops/std/variable";
 import { CompletionItem } from "./types.ts";
 import { DocHandler } from "./documentation.ts";
 import { Config, makeConfig } from "./config.ts";
